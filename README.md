@@ -6,7 +6,7 @@
 [![Build Status](https://img.shields.io/badge/tests-24%20passed-success.svg)](tests/)
 [![Coverage](https://img.shields.io/badge/coverage-92%25-green.svg)](tests/)
 
-An end-to-end research implementation of the Dreamer-style World Model Reinforcement Learning framework. It trains a recurrent latent world model (RSSM) on environment observations, constructs imagined rollout trajectories entirely within the latent space, and uses them to train an Actor-Critic policy with high sample efficiency.
+ Latent Dreamer is a research-oriented implementation of a Dreamer-style Model-Based Reinforcement Learning framework. Instead of learning directly from millions of environment interactions, the agent first builds a compact latent world model of its environment and then learns optimal behavior by imagining future trajectories entirely within this learned representation. This approach dramatically improves sample efficiency, making reinforcement learning faster, more stable, and computationally efficient.
 
 > [!NOTE]
 > For a deep dive into the mathematical formulations, algorithms, and references, see the [Technical Documentation](docs/technical_documentation.md).
@@ -145,16 +145,5 @@ python -m pytest tests/ --cov=src/latent_dreamer --cov-report=term-missing
 
 ---
 
-## 📄 References & Citations
-
-If you use this repository in your academic research, please cite our implementation:
-
-```bibtex
-@article{latentdreamer2026,
-  title={Latent Dreamer: Learning Predictive World Models for Sample-Efficient Reinforcement Learning},
-  author={Antigravity DeepMind Team},
-  journal={GitHub Repository},
-  url={https://github.com/your-username/latent-dreamer},
-  year={2026}
-}
-```
+Harsh Raj Singh
+M.Sc Data Science & Big Data Analytics
